@@ -6,9 +6,9 @@
 Servo internalServo;
 
 DS3218Servo::DS3218Servo(){
-    _pin(-1), 
-    _max_degree(180), // デフォルトは180度 
-    _current_pulse_us(NEUTRAL_PULSE_US) 
+    _pin = -1;
+    _max_degree = 180; // デフォルトは180度
+    _current_pulse_us = NEUTRAL_PULSE_US;
 }
 void DS3218Servo::attach(int pin, int max_degree) {
     _pin = pin;
